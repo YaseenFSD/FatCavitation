@@ -1,0 +1,46 @@
+.navbar-brand.mx-auto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.navbar-brand.d-flex.align-items-center {
+  width: 100px; /* Adjust the value as needed */
+}
+
+.navbar-brand.d-flex.align-items-center.justify-content-end {
+  width: 100px; /* Adjust the value as needed */
+}
+
+.navbar-brand.d-flex.align-items-center {
+  flex-shrink: 0;
+}
+
+.navbar-brand.d-flex.align-items-center.justify-content-end {
+  flex-shrink: 0;
+}
+
+.navbar-brand {
+  margin: 0;
+}
+
+.navbar {
+  flex-wrap: nowrap;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+
+.navbar-toggler-icon {
+  outline: none;
+  border: none;
+}
+
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}

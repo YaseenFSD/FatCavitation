@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { faInstagram, faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons"
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fat-cavitation';
+  faInstagram = faInstagram;
+  faTwitter = faTwitter;
+  faFacebook = faFacebook;
 }

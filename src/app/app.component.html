@@ -10,23 +10,26 @@
 
 <body>
   <!-- Header -->
-  <header>
-    <h1 class="fixed-top text-center bg-warning-subtle">Fat Cavitation</h1>
-  <!-- 
-    <nav>
-      navs as list items
-      <ul ngbNav class="nav-tabs">
-        <li ngbNavItem>
-          <button ngbNavLink>Button</button>
-        </li>
-        <li ngbNavItem>
-          <a ngbNavLink>Link</a>
-        </li>
-      </ul>
-
-      navs without list
-      <div ngbNav class="nav-tabs">
-        <ng-container ngbNavItem>
+  <header class="fixed-top">
+    <app-nav-menu>
+    </app-nav-menu>
+    
+    <!-- <h1 class="text-center bg-warning-subtle">Fat Cavitation</h1> -->
+    <!-- 
+      <nav>
+        navs as list items
+        <ul ngbNav class="nav-tabs">
+          <li ngbNavItem>
+            <button ngbNavLink>Button</button>
+          </li>
+          <li ngbNavItem>
+            <a ngbNavLink>Link</a>
+          </li>
+        </ul>
+        
+        navs without list
+        <div ngbNav class="nav-tabs">
+          <ng-container ngbNavItem>
           <button ngbNavLink>Button</button>
         </ng-container>
         <ng-container ngbNavItem>
@@ -35,17 +38,59 @@
       </div>
     </nav>
   -->
-  </header>
-  <div class="scroll-container">
+</header>
+
+  <!-- <div class="scroll-container">
     <div class="content-test">
-      <!-- Your content goes here -->
     </div>
-  </div>
+  </div> -->
 
   <!-- Main Content Area -->
   <div class="container">
     <router-outlet></router-outlet>
   </div>
+
+
+  <footer class="footer text-center bg-light pt-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h5>About Us</h5>
+          <p>Your description about your company or project goes here. Provide a brief overview and mission statement.
+          </p>
+        </div>
+        <div class="col-md-12">
+          <h5>Follow Us</h5>
+          <ul class="list-unstyled list-inline social-icons">
+            <li class="list-inline-item">
+              <a href="#">
+                <fa-icon [icon]="faFacebook"></fa-icon>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <fa-icon [icon]="faTwitter"></fa-icon>
+              </a></li>
+            <li class="list-inline-item">
+              <a href="#">
+                <fa-icon [icon]="faInstagram"></fa-icon>
+              </a>
+            </li>
+            <!-- Add more social icons as needed -->
+          </ul>
+        </div>
+        <div class="col-md-12">
+          <h5>Contact Us</h5>
+          <address>
+            <strong>Your Company Name</strong><br>
+            123 Main Street, City<br>
+            State, Zip Code<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
