@@ -8,15 +8,20 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 import { GenericPageComponent } from './generic-page/generic-page.component';
+import { UltrasonicComponent } from './ultrasonic/ultrasonic.component';
 
-const routes: Routes = [{ path: "", component: HomeComponent }]
+const routes: Routes = [
+  { path: "", component: HomeComponent},
+  { path: "ultrasonic", component: UltrasonicComponent}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    GenericPageComponent
+    GenericPageComponent,
+    UltrasonicComponent
   ],
   imports: [
     BrowserModule,

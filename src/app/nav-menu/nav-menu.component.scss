@@ -6,11 +6,11 @@
 }
 
 .navbar-brand.d-flex.align-items-center {
-  width: 100px; /* Adjust the value as needed */
+  width: 100px; 
 }
 
 .navbar-brand.d-flex.align-items-center.justify-content-end {
-  width: 100px; /* Adjust the value as needed */
+  width: 100px; 
 }
 
 .navbar-brand.d-flex.align-items-center {
@@ -46,37 +46,14 @@ button.navbar-toggler {
 }
 
 
-/* Style for the dropdown container */
-// .dropdown-container {
-//   position: relative;
-//   display: inline-block;
-// }
-
-/* Style for the button or link that triggers the dropdown */
-// .dropdown-button {
-//   background-color: #ffffff;
-//   border: 1px solid #ccc;
-//   color: #333333;
-//   padding: 10px 20px;
-//   cursor: pointer;
-//   border-radius: 4px; /* Add some border radius for a softer look */
-// }
-
-/* Style for the dropdown content */
 .dropdown-container {
-  // display: none;
-  // position: absolute;
   padding-left: 0px;
   background-color: #ffffff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  // z-index: 1;
-  // min-width: 160px;
   border-radius: 10px; /* Match the border radius with the button for consistency */
 }
 
-/* Style for individual items in the dropdown */
 .dropdown-item {
-
   padding: 10px 25px;
   text-decoration: none;
   display: block;
@@ -84,9 +61,13 @@ button.navbar-toggler {
   transition: background-color 0.3s; /* Add a smooth transition effect */
 }
 
-/* Change color on hover for items */
 .dropdown-item:hover {
   background-color: #f9f9f9;
   cursor: pointer;
 }
+
+.dropdown-anchor {
+  text-decoration: none;
+}
+
 

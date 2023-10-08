@@ -17,7 +17,7 @@ export class NavMenuComponent {
 	}
 
   close(content:any){
-
+    // this.offcanvasService.
   }
 
 }

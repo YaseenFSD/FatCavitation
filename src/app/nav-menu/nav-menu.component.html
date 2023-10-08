@@ -1,6 +1,6 @@
 <ng-template #content let-offcanvas>
     <div class="offcanvas-header">
-        <h4 class="offcanvas-title">MENU TEXT</h4>
+        <h4 class="offcanvas-title">Fat Cavitation</h4>
         <button type="button" class="btn-close" aria-label="Close"
             (click)="offcanvas.dismiss('Cross clicked')"></button>
     </div>
@@ -9,29 +9,35 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Page 2</a>
-            </li>
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" (click)="collapse.toggle()" type="button"
                     [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
                     Treatments
                 </a>
                 <div class="" #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
-                    
-                    <ul class="btn-outline-primary" class="dropdown-container">
-                        <a>
-                        <li class="dropdown-item">
+
+                    <ul class="btn-outline-primary" class="dropdown-container" (click)="offcanvas.dismiss()">
+                        <a routerLink="/ultrasonic" class="dropdown-anchor">
+                            <li class="dropdown-item">
                                 Ultrasonic Cavitation
                             </li>
                         </a>
-                        <a>
-                        <li class="dropdown-item">
-                                two
+                        <a class="dropdown-anchor">
+                            <li class="dropdown-item">
+                                Stretch mark removal
                             </li>
                         </a>
                     </ul>
                 </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
             </li>
         </ul>
     </div>
