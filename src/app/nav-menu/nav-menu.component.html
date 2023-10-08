@@ -15,17 +15,21 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" (click)="collapse.toggle()" type="button"
                     [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-                    Dropdown
+                    Treatments
                 </a>
                 <div class="" #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
                     
-                    <ul>
-                        <li>
-                            one
-                        </li>
-                        <li>
-                            two
-                        </li>
+                    <ul class="btn-outline-primary" class="dropdown-container">
+                        <a>
+                        <li class="dropdown-item">
+                                Ultrasonic Cavitation
+                            </li>
+                        </a>
+                        <a>
+                        <li class="dropdown-item">
+                                two
+                            </li>
+                        </a>
                     </ul>
                 </div>
             </li>

@@ -1,23 +1,25 @@
-<div class="d-flex flex-nowrap justify-content-center ">
+<div class="d-flex flex-nowrap justify-content-center carousel-wrapper ">
     <div>
     <ngb-carousel
       #carousel
       [interval]="4000"
       (slide)="onSlide($event)"
+      class="carousel-div"
     >
       <ng-template ngbSlide *ngFor="let img of images; index as i">
         <div class="carousel-caption">
           <h3>My slide {{i + 1}} title</h3>
         </div>
-        <a href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
           <div class="picsum-img-wrapper text-center">
             <img class="img-fluid" [src]="img" alt="My image {{i + 1}} description" />
           </div>
-        </a>
+       
       </ng-template>
     </ngb-carousel>
     <hr />
-
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate ipsam sunt dolore esse ea sed voluptate quasi. Fuga ea deserunt, debitis voluptatibus iusto delectus iste similique impedit repellat natus?
+    <p class="text-center">
+      Fat cavitation is a non-invasive body contouring treatment that uses ultrasound waves to break down fat cells.
+      It can be a great option for those looking to target specific areas of the body.   
+    </p>
   </div>
 </div>

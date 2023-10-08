@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
+import { GenericPageComponent } from './generic-page/generic-page.component';
 
 const routes: Routes = [{ path: "", component: HomeComponent }]
 
@@ -14,7 +15,8 @@ const routes: Routes = [{ path: "", component: HomeComponent }]
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent
+    HomeComponent,
+    GenericPageComponent
   ],
   imports: [
     BrowserModule,
